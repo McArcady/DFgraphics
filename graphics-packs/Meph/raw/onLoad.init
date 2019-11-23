@@ -1,3 +1,7 @@
+#librarians office
+modtools/reaction-trigger -reactionName OPEN_LEGENDS -command [ open-legends ]
+modtools/reaction-trigger -reactionName LIBRARIAN -command [ librarian ]
+
 #banner
 modtools/reaction-trigger -reactionName BANNER -command [ building/subtype-change -building \\BUILDING_ID -type BANNER ]
 
@@ -311,4 +315,34 @@ modtools/reaction-trigger -reactionName PAINTING_93 -command [ building/subtype-
 modtools/reaction-trigger -reactionName PAINTING_94 -command [ building/subtype-change -building \\BUILDING_ID -type PAINTING_94 ]
 modtools/reaction-trigger -reactionName PAINTING_95 -command [ building/subtype-change -building \\BUILDING_ID -type PAINTING_95 ]
 modtools/reaction-trigger -reactionName PAINTING_96 -command [ building/subtype-change -building \\BUILDING_ID -type PAINTING_96 ]
+
+
+#alphabet
+modtools/reaction-trigger -reactionName ALPHABET -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET ]
+modtools/reaction-trigger -reactionName ALPHABET_A -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_A ]
+modtools/reaction-trigger -reactionName ALPHABET_B -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_B ]
+modtools/reaction-trigger -reactionName ALPHABET_C -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_C ]
+modtools/reaction-trigger -reactionName ALPHABET_D -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_D ]
+modtools/reaction-trigger -reactionName ALPHABET_E -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_E ]
+modtools/reaction-trigger -reactionName ALPHABET_F -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_F ]
+modtools/reaction-trigger -reactionName ALPHABET_G -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_G ]
+modtools/reaction-trigger -reactionName ALPHABET_H -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_H ]
+modtools/reaction-trigger -reactionName ALPHABET_I -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_I ]
+modtools/reaction-trigger -reactionName ALPHABET_J -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_J ]
+modtools/reaction-trigger -reactionName ALPHABET_K -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_K ]
+modtools/reaction-trigger -reactionName ALPHABET_L -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_L ]
+modtools/reaction-trigger -reactionName ALPHABET_M -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_M ]
+modtools/reaction-trigger -reactionName ALPHABET_N -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_N ]
+modtools/reaction-trigger -reactionName ALPHABET_O -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_O ]
+modtools/reaction-trigger -reactionName ALPHABET_P -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_P ]
+modtools/reaction-trigger -reactionName ALPHABET_Q -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_Q ]
+modtools/reaction-trigger -reactionName ALPHABET_R -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_R ]
+modtools/reaction-trigger -reactionName ALPHABET_S -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_S ]
+modtools/reaction-trigger -reactionName ALPHABET_T -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_T ]
+modtools/reaction-trigger -reactionName ALPHABET_U -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_U ]
+modtools/reaction-trigger -reactionName ALPHABET_V -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_V ]
+modtools/reaction-trigger -reactionName ALPHABET_W -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_W ]
+modtools/reaction-trigger -reactionName ALPHABET_X -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_X ]
+modtools/reaction-trigger -reactionName ALPHABET_Y -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_Y ]
+modtools/reaction-trigger -reactionName ALPHABET_Z -command [ building/subtype-change -building \\BUILDING_ID -type ALPHABET_Z ]
 

@@ -4,13 +4,15 @@ creature_annelids
 
 [CREATURE:WORM]
 	[DESCRIPTION:A tiny burrowing creature, found in moist soil.  It is legless, long and thin.]
+	YES_REVISED!DESCRIPTION:A tiny burrowing creature found in moist soil. Legless, long, and thin, it feels its way through soil with its tongue-like prostomium.] Revision: rewrote description.
+
 	[NAME:worm:worms:worm]
 	[CASTE_NAME:worm:worms:worm]
 	[COLOR:7:0:0]
-	[PETVALUE:10][CREATURE_TILE:119][ALTTILE:120]
+	[PETVALUE:10][CREATURE_TILE:119]ALTTILE:120
 	[VERMIN_SOIL][FREQUENCY:100][VERMIN_HATEABLE]
 	[SMALL_REMAINS][VERMIN_NOTRAP][NOBONES]
-	[NATURAL][PET]
+	[NATURAL]YES_REVISED!PET]
 	[NOT_BUTCHERABLE]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE]
@@ -58,7 +60,8 @@ creature_annelids
 	[GO_TO_START]
 	[NAME:worm man:worm men:worm man]
 	[CASTE_NAME:worm man:worm men:worm man]
-	[DESCRIPTION:A worm-like creature with the torso of a man.]
+	NO_REVISED[DESCRIPTION:A worm-like creature with the torso of a man.]
+	YES_REVISED!DESCRIPTION:A small, frail-looking person with a body of segmented rings. A large, tongue-like prostomium covers its large mouth, the only feature on its expressionless face. Legless, it writhes forward to move.] Revision: rewrote description.
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:60:80]

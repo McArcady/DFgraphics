@@ -7,11 +7,13 @@ Geckos were sponsored by the generous contributions of the Bay 12 community.
 	Ghoulz - 15 minutes could save you 15% or more on carp insurance.
 
 [CREATURE:GECKO_LEOPARD]
-	[DESCRIPTION:A tiny, brightly-colored lizard with feet that can stick to branch and stone.]
+	NO_REVISED[DESCRIPTION:A tiny, brightly-colored lizard with feet that can stick to branch and stone.]
+	YES_REVISED!DESCRIPTION:A tiny, spotted lizard with bumpy skin, a long tail, and feet that stick to branch and stone.] Revision: rewrote description.
+	
 	[NAME:leopard gecko:leopard geckos:leopard gecko]
 	[CASTE_NAME:leopard gecko:leopard geckos:leopard gecko]
 	[CREATURE_TILE:77][COLOR:6:0:1]
-	[ALTTILE:123]
+	ALTTILE:123
 	[PETVALUE:10]
 	[VERMIN_GROUNDER][FREQUENCY:100]
 	[SMALL_REMAINS]
@@ -88,19 +90,21 @@ Geckos were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:leopard gecko man:leopard gecko men:leopard gecko man]
+		YES_REVISED!DESCRIPTION:A small, spotted man with bumpy skin and large, glassy eyes set on either side of an angular, grinning face. He clings to solid rock with sticky hands and feet.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:leopard gecko woman:leopard gecko women:leopard gecko woman]
+		YES_REVISED!DESCRIPTION:A small, spotted woman with bumpy skin and large, glassy eyes set on either side of an angular, grinning face. She clings to solid rock with sticky hands and feet.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
-	[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]
+	NO_REVISED[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:711:521:293:1900:2900] 30 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:leopard gecko man:leopard gecko men:leopard gecko man]
-	[DESCRIPTION:A person with the head and fingers of a gecko.]
+	NO_REVISED[DESCRIPTION:A person with the head and fingers of a gecko.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:60:80]
@@ -109,16 +113,24 @@ Geckos were sponsored by the generous contributions of the Bay 12 community.
 
 [CREATURE:GIANT_LEOPARD_GECKO]
 	[COPY_TAGS_FROM:GECKO_LEOPARD]
+	YES_REVISED!CV_REMOVE_TAG:MAXAGE] Revision: the old MAXAGE tag needs to be removed prior to adding a new one because of bug #6393.
+	YES_REVISED!APPLY_CURRENT_CREATURE_VARIATION] Revision: apply the above change.
 	[APPLY_CREATURE_VARIATION:GIANT]
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
 	[SELECT_CASTE:ALL]
+	YES_REVISED!APPLY_CREATURE_VARIATION:KICK_ATTACK] Revision: they're big enough to kick.
 	[CHANGE_BODY_SIZE_PERC:400700]
 	[GO_TO_START]
 	[NAME:giant leopard gecko:giant leopard geckos:giant leopard gecko]
 	[CASTE_NAME:giant leopard gecko:giant leopard geckos:giant leopard gecko]
-	[DESCRIPTION:A large monster in the shape of a gecko.]
+	NO_REVISED[DESCRIPTION:A large monster in the shape of a gecko.]
+	YES_REVISED!DESCRIPTION:A spotted gecko larger than most people. It has bumpy skin and large, glassy eyes. Its large feet stick to branch and stone.] Revision: rewrote description.
+	YES_REVISED!LARGE_PREDATOR] Revision: they're big enough to eat dwarves.
+	YES_REVISED!MAXAGE:12:20] Revision: Increased the MAXAGE for balance and bugfixing purposes.
+	YES_REVISED!CHILD:1] Revision: fix for bug 7983: creatures without a CHILD tag cannot be tamed.
+	YES_REVISED!GENERAL_CHILD_NAME:juvenile giant leopard gecko:juvenile giant leopard geckos] Revision: now that they have children, name them.
 	[POPULATION_NUMBER:10:20]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:21]
@@ -139,7 +151,8 @@ Desert tortoises were sponsored by the generous contributions of the Bay 12 comm
 	Zari
 
 [CREATURE:DESERT TORTOISE]
-	[DESCRIPTION:A tiny shelled reptile that lives in the desert.]
+	NO_REVISED[DESCRIPTION:A tiny shelled reptile that lives in the desert.]
+	YES_REVISED!DESCRIPTION:A tiny shelled reptile that lives in the desert. It has a long lifespan and spend much of it in burrows and shelters.] Revision: rewrote description.
 	[NAME:desert tortoise:desert tortoises:desert tortoise]
 	[CASTE_NAME:desert tortoise:desert tortoises:desert tortoise]
 	[CHILD:1][GENERAL_CHILD_NAME:desert tortoise hatchling:desert tortoise hatchlings]
@@ -231,19 +244,21 @@ Desert tortoises were sponsored by the generous contributions of the Bay 12 comm
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:desert tortoise man:desert tortoise men:desert tortoise man]
+		YES_REVISED!DESCRIPTION:A small, reptilian man with wide, flat arms and legs, a stern angular face, and a great shell. The eyes set on either side of his head are level with his tall, jutting nose.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:desert tortoise woman:desert tortoise women:desert tortoise woman]
+		YES_REVISED!DESCRIPTION:A small, reptilian woman with wide, flat arms and legs, a stern angular face, and a great shell. The eyes set on either side of her head are level with her tall, jutting nose.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
-	[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]
+	NO_REVISED[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:750:600:439:1900:2900] 20 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:desert tortoise man:desert tortoise men:desert tortoise man]
-	[DESCRIPTION:A reptile person with the head and tail of a desert tortoise.]
+	NO_REVISED[DESCRIPTION:A reptile person with the head and tail of a desert tortoise.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:60:80]
@@ -262,14 +277,16 @@ Desert tortoises were sponsored by the generous contributions of the Bay 12 comm
 	[NAME:giant desert tortoise:giant desert tortoises:giant desert tortoise]
 	[CASTE_NAME:giant desert tortoise:giant desert tortoises:giant desert tortoise]
 	[GENERAL_CHILD_NAME:giant desert tortoise hatchling:giant desert tortoise hatchlings]
-	[DESCRIPTION:A large monster in the form of a desert tortoise.]
+	NO_REVISED[DESCRIPTION:A large monster in the form of a desert tortoise.]
+	YES_REVISED!DESCRIPTION:A huge shelled reptile larger than most people. It has great flippers and an enormous shell. It is long-lived and slow-moving, spending much of its time resting in burrows and in shelters.] Revision: rewrote description.
 	[POPULATION_NUMBER:10:30]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:21]
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	NO_REVISED[MOUNT_EXOTIC]
+	Revision: removed MOUNT_EXOTIC because of bugs 926 and 5688. Amphibious mounts will drown any invaders or traders that ride on them.
 	[GO_TO_END]
 	[PREFSTRING:shells]
 	[PREFSTRING:longevity]
@@ -282,7 +299,8 @@ Gila monsters were sponsored by the generous contributions of the Bay 12 communi
 	Funnyguts
 
 [CREATURE:GILA_MONSTER]
-	[DESCRIPTION:A small venomous lizard.]
+	NO_REVISED[DESCRIPTION:A small venomous lizard.]
+	YES_REVISED!DESCRIPTION:A small, slow-moving, venomous lizard with bead-like, mottled scales and a long, heavy body. It spends its time in burrows, thickets, and under rocks, and avoids large open areas.] Revision: rewrote description.
 	[NAME:gila monster:gila monsters:gila monster]
 	[CASTE_NAME:gila monster:gila monsters:gila monster]
 	[CHILD:1][GENERAL_CHILD_NAME:gila monster hatchling:gila monster hatchlings]
@@ -415,8 +433,10 @@ Gila monsters were sponsored by the generous contributions of the Bay 12 communi
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:gila monster man:gila monster men:gila monster man]
+		YES_REVISED!DESCRIPTION:A small, venomous, reptilian man with mottled, bead-like scales on a heavy, long body. His neck is as wide as his jutting head. He moves in laggard fashion.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:gila monster woman:gila monster women:gila monster woman]
+		YES_REVISED!DESCRIPTION:A small, venomous, reptilian woman with mottled, bead-like scales on a heavy, long body. Her neck is as wide as her jutting head. She moves in laggard fashion.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
@@ -427,7 +447,8 @@ Gila monsters were sponsored by the generous contributions of the Bay 12 communi
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:gila monster man:gila monster men:gila monster man]
-	[DESCRIPTION:A venomous person with the head and tail of a gila monster.]
+	NO_REVISED[DESCRIPTION:A venomous person with the head and tail of a gila monster.]
+	Revision: rewrote and gendered description.
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:60:80]
@@ -460,10 +481,13 @@ Gila monsters were sponsored by the generous contributions of the Bay 12 communi
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:10701]
 	[GO_TO_START]
+	YES_REVISED!NATURAL_SKILL:DISCIPLINE:1] Revision: they won't stop fighting easily.
 	[NAME:giant gila monster:giant gila monsters:giant gila monster]
 	[CASTE_NAME:giant gila monster:giant gila monsters:giant gila monster]
 	[GENERAL_CHILD_NAME:giant gila monster hatchling:giant gila monster hatchlings]
-	[DESCRIPTION:A huge beast in the form of a gila monster.]
+	YES_REVISED!DESCRIPTION:A slow-moving, venomous reptile larger than most people. It has a heavy, long body covered in mottled, bead-like scales. Its slow nature belies a deadly predator: beware its venom!.] Revision: rewrote description.
+	YES_REVISED!LARGE_PREDATOR] Revision: they're big enough to eat dwarves.
+	NO_REVISED[DESCRIPTION:A huge beast in the form of a gila monster.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:21]

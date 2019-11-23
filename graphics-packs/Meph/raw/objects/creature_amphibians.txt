@@ -3,11 +3,12 @@ creature_amphibians
 [OBJECT:CREATURE]
 
 [CREATURE:TOAD]
-	[DESCRIPTION:A squat amphibian with leathery skin, found in relatively dry areas.]
+	NO_REVISED[DESCRIPTION:A squat amphibian with leathery skin, found in relatively dry areas.]
+		YES_REVISED!DESCRIPTION:A tiny, squat amphibian which lives on land and spawns in water. Its skin feels bumpy and leathery. Puffy glands on its shoulders secrete a mild toxin.] Revision: rewrote description.
 	[NAME:toad:toads:toad]
 	[CASTE_NAME:toad:toads:toad]
 	[CREATURE_TILE:163][COLOR:2:0:0]
-	[ALTTILE:26]
+	ALTTILE:26
 	[PETVALUE:10]
 	[VERMIN_GROUNDER][FREQUENCY:100][VERMIN_HATEABLE]
 	[AMPHIBIOUS][SMALL_REMAINS][NO_WINTER][UNDERSWIM]
@@ -56,6 +57,7 @@ creature_amphibians
 		[ATTACK_FLAG_CANLATCH]
 	[NOCTURNAL]
 	[MUNDANE]
+	YES_REVISED!CARNIVORE] Revision: they're carnivores.
 	[CASTE:FEMALE]
 		[FEMALE]
 	[CASTE:MALE]
@@ -74,19 +76,21 @@ creature_amphibians
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:toad man:toad men:toad man]
+		YES_REVISED!DESCRIPTION:A small, squat, amphibious man with bumpy, leathery skin, glassy eyes. A mild toxin secretes from puffy glands behind his ear holes.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:toad woman:toad women:toad woman]
+		YES_REVISED!DESCRIPTION:A small, squat, amphibious woman with bumpy, leathery skin, glassy eyes, and an unsettling wide grin. A mild toxin secretes from puffy glands behind her ear holes.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
-	[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]
+	NO_REVISED[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:711:521:293:1900:2900] 30 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:toad man:toad men:toad man]
-	[DESCRIPTION:A dark green man with the distinct head of a toad.]
+	NO_REVISED[DESCRIPTION:A dark green man with the distinct head of a toad.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:60:80]
@@ -95,23 +99,34 @@ creature_amphibians
 
 [CREATURE:GIANT_TOAD]
 	[COPY_TAGS_FROM:TOAD]
+	YES_REVISED!CV_REMOVE_TAG:MAXAGE] Revision: the old MAXAGE tag needs to be removed prior to adding a new one because of bug #6393.
+	YES_REVISED!APPLY_CURRENT_CREATURE_VARIATION] Revision: apply the above change.
 	[APPLY_CREATURE_VARIATION:GIANT]
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:100700]
+	YES_REVISED!APPLY_CREATURE_VARIATION:KICK_ATTACK] Revision: giant animals should be able to kick, given their size.
 	[GO_TO_START]
 	[NAME:giant toad:giant toads:giant toad]
 	[CASTE_NAME:giant toad:giant toads:giant toad]
-	[DESCRIPTION:A huge monster in the shape of a toad.]
+	NO_REVISED[DESCRIPTION:A huge monster in the shape of a toad.]
+	YES_REVISED!DESCRIPTION:A squat amphibian larger than most people. Its skin is bumpy and leathery. Large, puffy shoulder glands secrete a mild toxin. Beware: anything that strays near risks being snapped up by the creature's enormous tongue.] Revision: rewrote description.
+
 	[POPULATION_NUMBER:10:20]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:162]
 	[COLOR:2:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	NO_REVISED[MOUNT_EXOTIC]
+	Revision: removed MOUNT_EXOTIC because of bugs 926 and 5688. Amphibious mounts will drown any invaders or traders that ride on them.
+	YES_REVISED!LARGE_PREDATOR] Revision: they're big enough to eat dwarves.
+	YES_REVISED!AMBUSHPREDATOR] Revision: they're ambush predators.
+	YES_REVISED!MAXAGE:10:11] Revision: Increased the MAXAGE for balance and bugfixing purposes.
+	YES_REVISED!CHILD:1] Revision: fix for bug 7983: creatures without a CHILD tag cannot be tamed.
+	[GENERAL_CHILD_NAME:giant toadlet:giant toadlets] Revision: now that they have children, name them.
 	[GO_TO_END]
 	[PREFSTRING:beauty]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:3512:2634:1756:878:4900:6900] 10 kph

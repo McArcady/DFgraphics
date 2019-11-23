@@ -3,10 +3,11 @@ creature_small_mammals
 [OBJECT:CREATURE]
 
 [CREATURE:RAT]
-	[DESCRIPTION:A small, intelligent vermin with a long naked tail.]
+	NO_REVISED[DESCRIPTION:A small, intelligent vermin with a long naked tail.]
+	YES_REVISED!DESCRIPTION:A small, intelligent vermin with a long naked tail. A common pest, it raids stored food and spreads disease.] Revision: rewrote description.
 	[NAME:rat:rats:rat]
 	[CASTE_NAME:rat:rats:rat]
-	[CREATURE_TILE:113][ALTTILE:114][COLOR:0:0:1]
+	[CREATURE_TILE:113]ALTTILE:114[COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:10]
 	[VERMIN_EATER][PENETRATEPOWER:2][FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
@@ -99,8 +100,10 @@ creature_small_mammals
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:rat man:rat men:rat man]
+		YES_REVISED!DESCRIPTION:A small, furry rat-like man with a pointy snout and a long, naked tail. The long whiskers at the end of his pointy snout help him look distinguished.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:rat woman:rat women:rat woman]
+		YES_REVISED!DESCRIPTION:A small, furry rat-like woman with a pointy snout and a long, naked tail. The long whiskers at the end of her pointy snout help her look distinguished.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
@@ -112,7 +115,8 @@ creature_small_mammals
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:rat man:rat men:rat man]
-	[DESCRIPTION:A person with the head and tail of a rat.]
+	NO_REVISED[DESCRIPTION:A person with the head and tail of a rat.]
+	Revision: rewrote and gendered description.
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:60:80]
@@ -122,7 +126,8 @@ creature_small_mammals
 	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
 
 [CREATURE:SQUIRREL_GRAY]
-	[DESCRIPTION:A small grey rodent found chirping in the trees of temperate woodlands.]
+	NO_REVISED[DESCRIPTION:A small grey rodent found chirping in the trees of temperate woodlands.]
+	YES_REVISED!DESCRIPTION:A small gray rodent with a bushy tail and a white belly, often found chirping in the trees of temperate woodland. It gathers food and stores it in small caches.] Revision: rewrote description.
 	[NAME:gray squirrel:gray squirrels:gray squirrel]
 	[CASTE_NAME:gray squirrel:gray squirrels:gray squirrel]
 	[CREATURE_TILE:69][COLOR:7:0:0]
@@ -213,8 +218,10 @@ creature_small_mammals
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:gray squirrel man:gray squirrel men:gray squirrel man]
+		YES_REVISED!DESCRIPTION:A small, furry rodent man with large eyes, a white belly, and a bushy tail. A skilled climber, he jumps and leaps through the trees, looking for food and playing with his kin.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:gray squirrel woman:gray squirrel women:gray squirrel woman]
+		YES_REVISED!DESCRIPTION:A small, furry rodent woman with large eyes, a white belly, and a bushy tail. A skilled climber, she jumps and leaps through the trees, looking for food and playing with her kin.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
@@ -226,7 +233,8 @@ creature_small_mammals
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:gray squirrel man:gray squirrel men:gray squirrel man]
-	[DESCRIPTION:A person with the head and tail of a gray squirrel.]
+	NO_REVISED[DESCRIPTION:A person with the head and tail of a gray squirrel.]
+	Revision: rewrote and gendered description.
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:60:80]
@@ -237,17 +245,21 @@ creature_small_mammals
 
 [CREATURE:GIANT_SQUIRREL_GRAY]
 	[COPY_TAGS_FROM:SQUIRREL_GRAY]
+	YES_REVISED!CV_REMOVE_TAG:MAXAGE] Revision: the old MAXAGE tag needs to be removed prior to adding a new one because of bug #6393.
+	YES_REVISED!APPLY_CURRENT_CREATURE_VARIATION] Revision: apply the above change.
 	[APPLY_CREATURE_VARIATION:GIANT]
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
+	YES_REVISED!MAXAGE:10:11] Revision: Increased the MAXAGE for balance and bugfixing purposes.
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:67367]
 	[GO_TO_START]
 	[NAME:giant gray squirrel:giant gray squirrels:giant gray squirrel]
 	[CASTE_NAME:giant gray squirrel:giant gray squirrels:giant gray squirrel]
 	[GENERAL_CHILD_NAME:giant gray squirrel pup:giant gray squirrel pups]
-	[DESCRIPTION:A large creature the shape of a gray squirrel.]
+	NO_REVISED[DESCRIPTION:A large creature the shape of a gray squirrel.]
+	YES_REVISED!DESCRIPTION:A gray rodent larger than most people. It has a bushy tail and a white belly, and is a skilled climber. It gathers food for itself and stores it in large caches for later.] Revision: rewrote description.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:1:4]
 	[CREATURE_TILE:162]
@@ -263,7 +275,8 @@ creature_small_mammals
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 
 [CREATURE:SQUIRREL_RED]
-	[DESCRIPTION:A small red rodent found in the trees of temperate woodlands.]
+	NO_REVISED[DESCRIPTION:A small red rodent found in the trees of temperate woodlands.]
+	YES_REVISED!DESCRIPTION:A small, bulky red rodent with a bushy tail and tall, bushy ears. Found in the trees of temperate woodland, it collects and store food in caches for later.] Revision: rewrote description.
 	[NAME:red squirrel:red squirrels:red squirrel]
 	[CASTE_NAME:red squirrel:red squirrels:red squirrel]
 	[CREATURE_TILE:69][COLOR:6:0:0]
@@ -354,8 +367,10 @@ creature_small_mammals
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:red squirrel man:red squirrel men:red squirrel man]
+		YES_REVISED!DESCRIPTION:A small, furry rodent man with large eyes, a bushy tail, and tall, bushy ears. A skilled climber, he jumps and leaps through the trees, looking for food and playing with his kin.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:red squirrel woman:red squirrel women:red squirrel woman]
+		YES_REVISED!DESCRIPTION:A small, furry rodent woman with large eyes, a bushy tail, and tall, bushy ears. A skilled climber, she jumps and leaps through the trees, looking for food and playing with her kin.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
@@ -367,7 +382,8 @@ creature_small_mammals
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:red squirrel man:red squirrel men:red squirrel man]
-	[DESCRIPTION:A person with the head and tail of a red squirrel.]
+	NO_REVISED[DESCRIPTION:A person with the head and tail of a red squirrel.]
+	Revision: rewrote and gendered description.
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:60:80]
@@ -378,17 +394,21 @@ creature_small_mammals
 
 [CREATURE:GIANT_SQUIRREL_RED]
 	[COPY_TAGS_FROM:SQUIRREL_RED]
+	YES_REVISED!CV_REMOVE_TAG:MAXAGE] Revision: the old MAXAGE tag needs to be removed prior to adding a new one because of bug #6393.
+	YES_REVISED!APPLY_CURRENT_CREATURE_VARIATION] Revision: apply the above change.
 	[APPLY_CREATURE_VARIATION:GIANT]
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
+	YES_REVISED!MAXAGE:10:11] Revision: Increased the MAXAGE for balance and bugfixing purposes.
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:67367]
 	[GO_TO_START]
 	[NAME:giant red squirrel:giant red squirrels:giant red squirrel]
 	[CASTE_NAME:giant red squirrel:giant red squirrels:giant red squirrel]
 	[GENERAL_CHILD_NAME:giant red squirrel pup:giant red squirrel pups]
-	[DESCRIPTION:A large creature the shape of a red squirrel.]
+	NO_REVISED[DESCRIPTION:A large creature the shape of a red squirrel.]
+	YES_REVISED!DESCRIPTION:A red rodent larger than most people. It has a bushy tail and tall, bushy ears, and is a skilled climber. It gathers food for itself and stores it in large caches for later.] Revision: rewrote description.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:1:4]
 	[CREATURE_TILE:162]
@@ -404,7 +424,8 @@ creature_small_mammals
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 
 [CREATURE:CHIPMUNK]
-	[DESCRIPTION:A tiny striped rodent found scurrying through the bushes and trees of the temperate forest.]
+	NO_REVISED[DESCRIPTION:A tiny striped rodent found scurrying through the bushes and trees of the temperate forest.]
+	YES_REVISED!DESCRIPTION:A tiny striped rodent that scurries through the bushes and trees of temperate forest. It stuffs food in its cheek pouches and carries to small caches, storing it for later and looking funny with its fat cheeks.] Revision: rewrote description.
 	[NAME:chipmunk:chipmunks:chipmunk]
 	[CASTE_NAME:chipmunk:chipmunks:chipmunk]
 	[CREATURE_TILE:69][COLOR:6:0:0]
@@ -495,8 +516,10 @@ creature_small_mammals
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:chipmunk man:chipmunk men:chipmunk man]
+		YES_REVISED!DESCRIPTION:A small, furry, striped rodent man with a bushy tail and small, round ears. He stuffs food in his cheek pouches for later, giving him a funny, fat-cheeked look.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:chipmunk woman:chipmunk women:chipmunk woman]
+		YES_REVISED!DESCRIPTION:A small, furry, striped rodent woman with a bushy tail and small, round ears. She stuffs food in her cheek pouches for later, giving her a funny, fat-cheeked look.] Revision: rewrote and gendered description.
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
@@ -508,7 +531,8 @@ creature_small_mammals
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[GO_TO_START]
 	[NAME:chipmunk man:chipmunk men:chipmunk man]
-	[DESCRIPTION:A striped person with the head and tail of a chipmunk.]
+	NO_REVISED[DESCRIPTION:A striped person with the head and tail of a chipmunk.]
+	Revision: rewrote and gendered description.
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:60:80]
@@ -519,17 +543,21 @@ creature_small_mammals
 
 [CREATURE:GIANT_CHIPMUNK]
 	[COPY_TAGS_FROM:CHIPMUNK]
+	YES_REVISED!CV_REMOVE_TAG:MAXAGE] Revision: the old MAXAGE tag needs to be removed prior to adding a new one because of bug #6393.
+	YES_REVISED!APPLY_CURRENT_CREATURE_VARIATION] Revision: apply the above change.
 	[APPLY_CREATURE_VARIATION:GIANT]
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
+	YES_REVISED!MAXAGE:10:11] Revision: Increased the MAXAGE for balance and bugfixing purposes.
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:67367]
 	[GO_TO_START]
 	[NAME:giant chipmunk:giant chipmunks:giant chipmunk]
 	[CASTE_NAME:giant chipmunk:giant chipmunks:giant chipmunk]
 	[GENERAL_CHILD_NAME:giant chipmunk pup:giant chipmunk pups]
-	[DESCRIPTION:A large creature the shape of a chipmunk.]
+	NO_REVISED[DESCRIPTION:A large creature the shape of a chipmunk.]
+	YES_REVISED!DESCRIPTION:A striped rodent larger than most people. It has a bushy tail and small, round ears. It stuffs food in its cheek pouches while carrying it to large caches, giving it a funny, fat-cheeked look.] Revision: rewrote description.
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:1:4]
 	[CREATURE_TILE:162]

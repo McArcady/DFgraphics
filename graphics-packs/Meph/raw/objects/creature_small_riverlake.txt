@@ -3,13 +3,15 @@ creature_small_riverlake
 [OBJECT:CREATURE]
 
 [CREATURE:FISH_LUNGFISH]
-	[DESCRIPTION:A small fish which can walk on the land and breathe air.  It burrows in the mud when things get dry.]
+	NO_REVISED[DESCRIPTION:A small fish which can walk on the land and breathe air.  It burrows in the mud when things get dry.]
+	YES_REVISED!DESCRIPTION:A small, eel-shaped fish that can walk on land and breathe air. When the mud dries, it burrows and until water returns and lives without food and water.] Revision: rewrote description.
 	[NAME:lungfish:lungfish:lungfish]
 	[CASTE_NAME:lungfish:lungfish:lungfish]
-	[CREATURE_TILE:121][ALTTILE:122][COLOR:6:0:0]
+	[CREATURE_TILE:121]ALTTILE:122[COLOR:6:0:0]
 	[VERMIN_GROUNDER]
 	Should be able to breathe air, but this amphib tag makes it beach itself, need new tag.
-	[AMPHIBIOUS][SMALL_REMAINS][FISHITEM][UNDERSWIM][VERMIN_NOTRAP]
+	NO_REVISED[AMPHIBIOUS][SMALL_REMAINS][FISHITEM][UNDERSWIM][VERMIN_NOTRAP]
+	YES_REVISED!AQUATIC]
 	[NATURAL]
 	[NOT_BUTCHERABLE]
 	[BIOME:RIVER_TROPICAL_FRESHWATER]
@@ -84,10 +86,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_LOACH_CLOWN]
-	[DESCRIPTION:A tiny orange-striped fish.  It lives in inland waters.]
+	NO_REVISED[DESCRIPTION:A tiny orange-striped fish.  It lives in inland waters.]
+	YES_REVISED!DESCRIPTION:A tiny whiskered river fish that makes happy clicking sounds. Its colorful stripes give it the name "clown loach".] Revision: rewrote description.
 	[NAME:clown loach:clown loaches:clown loach]
 	[CASTE_NAME:clown loach:clown loaches:clown loach]
-	[CREATURE_TILE:83][ALTTILE:84][COLOR:6:0:1]
+	[CREATURE_TILE:83]ALTTILE:84[COLOR:6:0:1]
 	[VERMIN_GROUNDER]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]
@@ -155,10 +158,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_BULLHEAD_BROWN]
-	[DESCRIPTION:A small whiskered fish found in muddy inland waters.]
+	NO_REVISED[DESCRIPTION:A small whiskered fish found in muddy inland waters.]
+	YES_REVISED!DESCRIPTION:A small whiskered fish that feeds at the muddy bottom of rivers, ponds, and lakes. It is adaptable, living in warmer and muddier waters than most fish.] Revision: rewrote description.
 	[NAME:brown bullhead:brown bullheads:brown bullhead]
 	[CASTE_NAME:brown bullhead:brown bullheads:brown bullhead]
-	[CREATURE_TILE:85][ALTTILE:86][COLOR:6:0:0]
+	[CREATURE_TILE:85]ALTTILE:86[COLOR:6:0:0]
 	[VERMIN_GROUNDER][VERMIN_FISH]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]
@@ -226,10 +230,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_BULLHEAD_YELLOW]
-	[DESCRIPTION:A small whiskered fish found scavenging in inland waters.]
+	NO_REVISED[DESCRIPTION:A small whiskered fish found scavenging in inland waters.]
+	YES_REVISED!DESCRIPTION:A small whiskered fish that scavenges at the muddy bottom of rivers, ponds, and lakes. It eats almost anything it can.] Revision: rewrote description.
 	[NAME:yellow bullhead:yellow bullheads:yellow bullhead]
 	[CASTE_NAME:yellow bullhead:yellow bullheads:yellow bullhead]
-	[CREATURE_TILE:121][ALTTILE:122][COLOR:6:0:0]
+	[CREATURE_TILE:121]ALTTILE:122[COLOR:6:0:0]
 	[VERMIN_GROUNDER][VERMIN_FISH]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]
@@ -297,10 +302,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_BULLHEAD_BLACK]
-	[DESCRIPTION:A small whiskered fish found in inland waters.]
+	NO_REVISED[DESCRIPTION:A small whiskered fish found in inland waters.]
+	YES_REVISED!DESCRIPTION:A small whiskered fish that feeds at the muddy bottom of rivers, ponds, and lakes. It sleeps during the day.] Revision: rewrote description.
 	[NAME:black bullhead:black bullheads:black bullhead]
 	[CASTE_NAME:black bullhead:black bullheads:black bullhead]
-	[CREATURE_TILE:83][ALTTILE:84][COLOR:6:0:0]
+	[CREATURE_TILE:83]ALTTILE:84[COLOR:6:0:0]
 	[VERMIN_GROUNDER][VERMIN_FISH]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]
@@ -368,10 +374,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_KNIFEFISH_BANDED]
-	[DESCRIPTION:A small spotted fish found in tropical rivers and lakes.]
+	NO_REVISED[DESCRIPTION:A small spotted fish found in tropical rivers and lakes.]
+	YES_REVISED!DESCRIPTION:A small spotted fish that swims in tropical rivers and lakes. Its short fins run the length of its sleek body. It's called a "banded knifefish" for its patterned skin.] Revision: rewrote description.
 	[NAME:banded knifefish:banded knifefish:banded knifefish]
 	[CASTE_NAME:banded knifefish:banded knifefish:banded knifefish]
-	[CREATURE_TILE:85][ALTTILE:86][COLOR:6:0:0]
+	[CREATURE_TILE:85]ALTTILE:86[COLOR:6:0:0]
 	[VERMIN_GROUNDER]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]
@@ -439,10 +446,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_CHAR]
-	[DESCRIPTION:A medium-sized spotted fish found in temperate lakes and rivers.]
+	NO_REVISED[DESCRIPTION:A medium-sized spotted fish found in temperate lakes and rivers.]
+	YES_REVISED!DESCRIPTION:A medium-sized, white-spotted fish with a red belly. It swims in temperate lakes and rivers, and can live in colder waters than most fish.] Revision: rewrote description.
 	[NAME:char:char:char]
 	[CASTE_NAME:char:char:char]
-	[CREATURE_TILE:121][ALTTILE:122][COLOR:0:0:1]
+	[CREATURE_TILE:121]ALTTILE:122[COLOR:0:0:1]
 	[VERMIN_GROUNDER][VERMIN_FISH]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]
@@ -510,10 +518,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_TROUT_RAINBOW]
-	[DESCRIPTION:A medium-sized spotted fish found in temperate rivers and lakes.]
+	NO_REVISED[DESCRIPTION:A medium-sized spotted fish found in temperate rivers and lakes.]
+	YES_REVISED!DESCRIPTION:A medium-sized spotted fish with a reddish stripe along its side and a white belly. It swims and hunts in temperate rivers and lakes.] Revision: rewrote description.
 	[NAME:rainbow trout:rainbow trout:rainbow trout]
 	[CASTE_NAME:rainbow trout:rainbow trout:rainbow trout]
-	[CREATURE_TILE:83][ALTTILE:84][COLOR:2:0:1]
+	[CREATURE_TILE:83]ALTTILE:84[COLOR:2:0:1]
 	[VERMIN_GROUNDER][VERMIN_FISH]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]
@@ -581,10 +590,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_MOLLY_SAILFIN]
-	[DESCRIPTION:A tiny spotted fish found in coastal rivers and temperate lakes.]
+	NO_REVISED[DESCRIPTION:A tiny spotted fish found in coastal rivers and temperate lakes.]
+	YES_REVISED!DESCRIPTION:A tiny spotted fish that swims in coastal rivers and temperate lakes, feeding on algae. It's affectionately called a "sailfin molly".] Revision: rewrote description.
 	[NAME:sailfin molly:sailfin mollies:sailfin molly]
 	[CASTE_NAME:sailfin molly:sailfin mollies:sailfin molly]
-	[CREATURE_TILE:85][ALTTILE:86][COLOR:2:0:0]
+	[CREATURE_TILE:85]ALTTILE:86[COLOR:2:0:0]
 	[VERMIN_GROUNDER]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]
@@ -656,10 +666,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_GUPPY]
-	[DESCRIPTION:A tiny colorful fish found in tropical lakes and rivers.]
+	NO_REVISED[DESCRIPTION:A tiny colorful fish found in tropical lakes and rivers.]
+	YES_REVISED!DESCRIPTION:A tiny, colorful fish with a patterned, fan-shaped tail. It gives birth to live youn and thrives in tropical lakes and rivers.] Revision: rewrote description.
 	[NAME:guppy:guppies:guppy]
 	[CASTE_NAME:guppy:guppies:guppy]
-	[CREATURE_TILE:121][ALTTILE:122][COLOR:1:0:1]
+	[CREATURE_TILE:121]ALTTILE:122[COLOR:1:0:1]
 	[VERMIN_GROUNDER]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]
@@ -731,10 +742,11 @@ creature_small_riverlake
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:FISH_PERCH]
-	[DESCRIPTION:A small striped fish found in fresh water.]
+	NO_REVISED[DESCRIPTION:A small striped fish found in fresh water.]
+	YES_REVISED!DESCRIPTION:A small, striped, ray-finned fish that swims and hunts in fresh waters. Its skin has a yellow shimmer.] Revision: rewrote description.
 	[NAME:perch:perch:perch]
 	[CASTE_NAME:perch:perch:perch]
-	[CREATURE_TILE:83][ALTTILE:84][COLOR:7:0:1]
+	[CREATURE_TILE:83]ALTTILE:84[COLOR:7:0:1]
 	[VERMIN_GROUNDER][VERMIN_FISH]
 	[AQUATIC][SMALL_REMAINS][FISHITEM][IMMOBILE_LAND][UNDERSWIM][VERMIN_NOTRAP]
 	[NATURAL]

@@ -3,7 +3,10 @@ creature_domestic
 [OBJECT:CREATURE]
 
 [CREATURE:DOG]
-	[DESCRIPTION:A medium-sized highly social mammalian carnivore.  It has a keen sense of smell.  It can be trained to obey commands.]
+	NO_REVISED[DESCRIPTION:A medium-sized highly social mammalian carnivore.  It has a keen sense of smell.  It can be trained to obey commands.]
+
+	YES_REVISED!NATURAL_SKILL:DISCIPLINE:2] Revision: they won't stop fighting easily.
+	YES_REVISED!DESCRIPTION:A medium-sized, highly social mammalian carnivore with a keen sense of smell. Loyal to a fault, it can be trained to obey commands.] Revision: rewrote description.
 	[NAME:dog:dogs:canine]
 	[CASTE_NAME:dog:dogs:canine]
 	#####
@@ -130,7 +133,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:CAT]
-	[DESCRIPTION:A small mammalian carnivore.  It is usually domestic and hunts vermin.]
+	NO_REVISED[DESCRIPTION:A small mammalian carnivore.  It is usually domestic and hunts vermin.]
+	YES_REVISED!DESCRIPTION:A small mammalian carnivore. It hunts vermin and is usually domestic. Territorial and curious, it won't stop exploring until it's gone everywhere it can.] Revision: rewrote description.
+
 	[NAME:cat:cats:feline]
 	[CASTE_NAME:cat:cats:feline]
 	[CREATURE_TILE:58][COLOR:0:0:1]
@@ -280,7 +285,9 @@ creature_domestic
 		[CDI:WAIT_PERIOD:20]
 
 [CREATURE:MULE]
-	[DESCRIPTION:A compact offspring of horse and donkey, bred to be a beast of burden.]
+	NO_REVISED[DESCRIPTION:A compact offspring of horse and donkey, bred to be a beast of burden.]
+	YES_REVISED!DESCRIPTION:The compact offspring of horse and donkey, bred to be a beast of burden. Its hardier than most horses, but less stubborn than most donkeys.] Revision: rewrote description.
+
 	[NAME:mule:mules:mule]
 	[CASTE_NAME:mule:mules:mule]
 	[CHILD:1][GENERAL_CHILD_NAME:mule foal:mule foals]
@@ -370,14 +377,17 @@ creature_domestic
 			[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:DONKEY]
-	[DESCRIPTION:A medium-sized, hooved herbivore.  Some are domesticated as beasts of burden.]
+	NO_REVISED[DESCRIPTION:A medium-sized, hooved herbivore.  Some are domesticated as beasts of burden.]
+	YES_REVISED!DESCRIPTION:A medium-sized hoofed herbivore, sometimes domesticated as a beast of burden. It has long ears and brays loudly, and has a reputation for stubbornness.] Revision: rewrote description.
+
 	[NAME:donkey:donkeys:asinine]
 	[CASTE_NAME:donkey:donkeys:asinine]
 	[CHILD:1][GENERAL_CHILD_NAME:donkey foal:donkey foals]
 	[CREATURE_TILE:56][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:200]
-	[PREFSTRING:stubborness]
+	NO_REVISED[PREFSTRING:stubborness]
+	YES_REVISED!PREFSTRING:stubbornness] Revision: fixed typo.
 	[LARGE_ROAMING]
 	[COMMON_DOMESTIC][PACK_ANIMAL]
 	[BENIGN][MEANDERER][PET]
@@ -484,7 +494,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:HORSE]
-	[DESCRIPTION:A large hooved, maned herbivore.  They can run swiftly and many are domesticated as steeds.]
+	NO_REVISED[DESCRIPTION:A large hooved, maned herbivore.  They can run swiftly and many are domesticated as steeds.]
+	YES_REVISED!DESCRIPTION:A large, hoofed, maned herbivore, often domesticated as a steed because of its speed. A skittish creature, it sleeps standing up so it can escape more quickly, and it's quick to run from predators.] Revision: rewrote description.
+
 	[NAME:horse:horses:equine]
 	[CASTE_NAME:horse:horses:equine]
 	[CREATURE_TILE:56][COLOR:7:0:0]
@@ -602,7 +614,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:COW]
-	[DESCRIPTION:A large mammalian herbivore.  They often bear large horns and the males are ill-tempered.  They are domesticated for milk and meat.]
+	NO_REVISED[DESCRIPTION:A large mammalian herbivore.  They often bear large horns and the males are ill-tempered.  They are domesticated for milk and meat.]
+
+	YES_REVISED!DESCRIPTION:A large mammalian herbivore with large horns. It can be ill-tempered and is kept for milk and for meat.] Revision: rewrote description.
 	[NAME:cow:cows:bovine]
 	[CASTE_NAME:cow:cows:bovine]
 	[CREATURE_TILE:56][COLOR:6:0:0]
@@ -731,7 +745,8 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:SHEEP]
-	[DESCRIPTION:A medium-sized herding animal.  It is prized for its thick wool coat.]
+	NO_REVISED[DESCRIPTION:A medium-sized herding animal.  It is prized for its thick wool coat.]
+	Revision: rewrote and gendered description.
 	[NAME:sheep:sheep:ovine]
 	[CHILD:1][GENERAL_CHILD_NAME:lamb:lambs]
 	[CREATURE_TILE:162][COLOR:7:0:1]
@@ -745,8 +760,10 @@ creature_domestic
 	[STANDARD_GRAZER]
 	[VISION_ARC:50:310]
 	[CASTE:FEMALE]
+		YES_REVISED!DESCRIPTION:A medium-sized herding animal with a bulky body and a short tail, prized for its thick wool coat. It flocks with its kind for protection from predators.] Revision: rewrote and gendered description.
 		[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
 	[CASTE:MALE]
+		YES_REVISED!DESCRIPTION:A medium-sized herding animal with a bulky body, a short tail, and lateral spiral horns, prized for its thick wool coat. It flocks with its kind for protection from predators.] Revision: rewrote and gendered description.
 		[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_HORN]
 	[SELECT_CASTE:ALL]
 	[NATURAL]
@@ -874,8 +891,10 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:PIG]
-	[DESCRIPTION:A medium-sized domestic animal.  It has a distinctive snout and corkscrew tail.  It is thought by some to be intelligent.]
-	[NAME:pig:pigs:porcine]
+	NO_REVISED[DESCRIPTION:A medium-sized domestic animal.  It has a distinctive snout and corkscrew tail.  It is thought by some to be intelligent.]
+
+	YES_REVISED!DESCRIPTION:A medium-sized domestic animal with a corkscrew tail, thought by some to be intelligent. It forages for food in the soil with its distinctive snout.] Revision: rewrote description.
+		[NAME:pig:pigs:porcine]
 	[CHILD:1][GENERAL_CHILD_NAME:piglet:piglets]
 	[CREATURE_TILE:162][COLOR:5:0:1]
 	[CREATURE_CLASS:MAMMAL]
@@ -989,7 +1008,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:GOAT]
-	[DESCRIPTION:A medium-sized herding animal.  It is known for its short horns and beard.]
+	NO_REVISED[DESCRIPTION:A medium-sized herding animal.  It is known for its short horns and beard.]
+
+	YES_REVISED!DESCRIPTION:A medium-sized herding animal with short horns and a beard. It's kept for milk and for meat.] Revision: rewrote description.
 	[NAME:goat:goats:hircine]
 	[CHILD:1][GENERAL_CHILD_NAME:goat kid:goat kids]
 	[CREATURE_TILE:162][COLOR:6:0:0]
@@ -1070,6 +1091,7 @@ creature_domestic
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
+	YES_REVISED!APPLY_CREATURE_VARIATION:HORN_BUTT_ATTACK] Revision: added a horn butt attack.
 	[DIURNAL]
 	[HOMEOTHERM:10070]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:1161:938:716:462:2200:3300] 19 kph
@@ -1119,7 +1141,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:BIRD_CHICKEN]
-	[DESCRIPTION:A small domestic bird capable of flying short distances.  It is prized for its tasty eggs.]
+	NO_REVISED[DESCRIPTION:A small domestic bird capable of flying short distances.  It is prized for its tasty eggs.]
+	YES_REVISED!DESCRIPTION:A small, domestic bird, with a red crest on its head, capable of flying short distances. It's prized for its tasty eggs and meat.] Revision: rewrote description.
+
 	[NAME:chicken:chickens:chicken]
 	[CHILD:1][GENERAL_CHILD_NAME:chick:chicks]
 	[CREATURE_TILE:36][COLOR:6:0:0]
@@ -1219,7 +1243,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:CAVY]
-	[DESCRIPTION:A small rodent with no tail.  It can be found roaming the grassland in herds.  It has three toes on its hind feet.]
+	NO_REVISED[DESCRIPTION:A small rodent with no tail.  It can be found roaming the grassland in herds.  It has three toes on its hind feet.]
+
+	YES_REVISED!DESCRIPTION:A small, stocky rodent with small ears, short legs, and no tail. It roams the grasslands as part of a herd.] Revision: rewrote description.
 	[NAME:cavy:cavies:cavy]
 	[CHILD:1][GENERAL_CHILD_NAME:cavy pup:cavy pups]
 	[CREATURE_TILE:162][COLOR:7:0:0]
@@ -1315,7 +1341,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:BIRD_DUCK]
-	[DESCRIPTION:A small water bird.  It has a long neck and powerful legs meant for swimming and diving.]
+	NO_REVISED[DESCRIPTION:A small water bird.  It has a long neck and powerful legs meant for swimming and diving.]
+
+	YES_REVISED!DESCRIPTION:A small water bird with a long neck and powerful legs meant for swimming and diving. It fishes for its meal and strains the water with its beak for food.] Revision: rewrote description.
 	[NAME:duck:ducks:duck]
 	[CHILD:1][GENERAL_CHILD_NAME:duckling:ducklings]
 	[CREATURE_TILE:36][COLOR:2:0:0]
@@ -1407,9 +1435,11 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:WATER_BUFFALO]
-	[DESCRIPTION:A large mammalian herbivore.  It is powerfully built and has long curved horns.]
+	NO_REVISED[DESCRIPTION:A large mammalian herbivore.  It is powerfully built and has long curved horns.]
+		YES_REVISED!DESCRIPTION:A large mammalian herbivore, powerfully built with long, curved horns. It spends so much time in the water that it's also called a "water buffalo".] Revision: rewrote description.
 	[NAME:water buffalo:water buffalos:water buffalo]
 	[CHILD:1][GENERAL_CHILD_NAME:water buffalo calf:water buffalo calves]
+	YES_REVISED!NATURAL_SKILL:DISCIPLINE:1] Revision: they won't stop fighting easily.
 	[CREATURE_TILE:56][COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[BIOME:ANY_TROPICAL_WETLAND]
@@ -1420,6 +1450,7 @@ creature_domestic
 	[LARGE_ROAMING]
 	[COMMON_DOMESTIC][PACK_ANIMAL][WAGON_PULLER]
 	[BENIGN][MEANDERER][PET]
+	YES_REVISED!MOUNT] Revision: water buffalos can serve as mounts.
 	[VISION_ARC:50:310]
 	[STANDARD_GRAZER]
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_HORN]
@@ -1534,7 +1565,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:REINDEER]
-	[DESCRIPTION:A large mammalian herbivore living in cold climates.  It has large antlers and sought-after fur.]
+	NO_REVISED[DESCRIPTION:A large mammalian herbivore living in cold climates.  It has large antlers and sought-after fur.]
+	YES_REVISED!DESCRIPTION:A large mammalian herbivore living in cold climates. It has large antlers and sought-after fur.] Revision: rewrote description.
+
 	[NAME:reindeer:reindeer:reindeer]
 	[CHILD:1][GENERAL_CHILD_NAME:reindeer calf:reindeer calves]
 	[CREATURE_TILE:56][COLOR:6:0:0]
@@ -1548,6 +1581,7 @@ creature_domestic
 	[LARGE_ROAMING]
 	[COMMON_DOMESTIC]
 	[BENIGN][MEANDERER][PET]
+	YES_REVISED!PACK_ANIMAL]YES_REVISED!WAGON_PULLER] Revision: they're pack animals and wagon pullers.
 	[VISION_ARC:50:310]
 	[STANDARD_GRAZER]
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_ANTLER]
@@ -1665,7 +1699,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:BIRD_GOOSE]
-	[DESCRIPTION:A small migratory bird.  It has a very long neck and can be found in lakes and other bodies of water.]
+	NO_REVISED[DESCRIPTION:A small migratory bird.  It has a very long neck and can be found in lakes and other bodies of water.]
+	YES_REVISED!DESCRIPTION:A small migratory water bird with a long neck, webbed feet, and a wide, flat bill. It travels long distances for food and to mate.] Revision: rewrote description.
+
 	[NAME:goose:geese:goose]
 	[CHILD:1][GENERAL_CHILD_NAME:gosling:goslings]
 	[CREATURE_TILE:36][COLOR:7:0:1]
@@ -1757,7 +1793,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:YAK]
-	[DESCRIPTION:A large mammalian herbivore.  It has long fur and curving horns.  It can be found in the mountains.]
+	NO_REVISED[DESCRIPTION:A large mammalian herbivore.  It has long fur and curving horns.  It can be found in the mountains.]
+	YES_REVISED!DESCRIPTION:A large mammalian herbivore found in the mountains. It has long, shaggy fur and curved horns. It has hey large lungs and is healthier at high altitudes.] Revision: rewrote description.
+	
 	[NAME:yak:yaks:yak]
 	[CHILD:1][GENERAL_CHILD_NAME:yak calf:yak calves]
 	[CREATURE_TILE:56][COLOR:6:0:0]
@@ -1884,7 +1922,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:LLAMA]
-	[DESCRIPTION:A large domestic pack animal.  It has a long neck.  It is prized for its hair.]
+	NO_REVISED[DESCRIPTION:A large domestic pack animal.  It has a long neck.  It is prized for its hair.]
+	YES_REVISED!DESCRIPTION:A large domestic pack animal with curved ears and a long neck and head. It's a curious and social creature, but can be aggressive if over-socialized. It's prized for its coarse hair.] Revision: rewrote description.
+	
 	[NAME:llama:llamas:llama]
 	[CASTE_NAME:llama:llamas:llama]
 	[CHILD:1][GENERAL_CHILD_NAME:baby llama:baby llamas]
@@ -1897,6 +1937,7 @@ creature_domestic
 	[LARGE_ROAMING]
 	[COMMON_DOMESTIC]
 	[BENIGN][MEANDERER][PET]
+	YES_REVISED!PACK_ANIMAL] Revision: they're pack animals.
 	[VISION_ARC:50:310]
 	[STANDARD_GRAZER]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
@@ -2013,7 +2054,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:ALPACA]
-	[DESCRIPTION:A large domestic animal with a long neck.  It has been bred for its valuable hair.]
+	NO_REVISED[DESCRIPTION:A large domestic animal with a long neck.  It has been bred for its valuable hair.]
+	YES_REVISED!DESCRIPTION:A large domestic animal with a long neck. It lives in a herd and brays in warning when predators arrive. It's bred for its valuable hair.] Revision: rewrote description.
+	
 	[NAME:alpaca:alpacas:alpaca]
 	[CASTE_NAME:alpaca:alpacas:alpaca]
 	[CHILD:1][GENERAL_CHILD_NAME:baby alpaca:baby alpacas]
@@ -2140,13 +2183,19 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:BIRD_GUINEAFOWL]
-	[DESCRIPTION:A small ground-dwelling bird.  It has a featherless head and eats seeds and insects.  It moves about in groups.]
-	[NAME:guineafowl:guineafowls:guineafowl]
+	NO_REVISED[DESCRIPTION:A small ground-dwelling bird.  It has a featherless head and eats seeds and insects.  It moves about in groups.]
+	
+	YES_REVISED!DESCRIPTION:A small, ground-dwelling bird that eats seeds and insects and moves about in groups. It has a black crest and a colorful, featherless head.] Revision: rewrote description.
+[NAME:guineafowl:guineafowls:guineafowl]
 	[CHILD:1][GENERAL_CHILD_NAME:keet:keets]
 	[CREATURE_TILE:36][COLOR:0:0:1]
 	[NATURAL]
 	[LARGE_ROAMING]
 	[COMMON_DOMESTIC]
+	YES_REVISED!BIOME:SAVANNA_TROPICAL] Revision: added missing biomes.
+	YES_REVISED!BIOME:SHRUBLAND_TROPICAL] Revision: added missing biomes.
+	YES_REVISED!BIOME:DESERT_ROCK] Revision: added missing biomes.
+	YES_REVISED!BIOME:GRASSLAND_TROPICAL] Revision: added missing biomes.
 	[PETVALUE:10]
 	[VISION_ARC:50:310]
 	[BENIGN][MEANDERER][PET]
@@ -2239,7 +2288,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:BIRD_PEAFOWL_BLUE]
-	[DESCRIPTION:A small forest bird.  The male's tail creates an extravagant display for females.  At night, they roost in the trees.]
+	NO_REVISED[DESCRIPTION:A small forest bird.  The male's tail creates an extravagant display for females.  At night, they roost in the trees.]
 	[NAME:blue peafowl:blue peafowls:blue peafowl]
 	[CHILD:1][GENERAL_CHILD_NAME:blue peachick:blue peachicks]
 	[CREATURE_TILE:36][COLOR:1:0:1]
@@ -2321,6 +2370,7 @@ creature_domestic
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[CASTE_NAME:blue peahen:blue peahens:blue peahen]
+		YES_REVISED!DESCRIPTION:A small, colorful forest bird with a fan-shaped crest on its head and white stripes above its eyes. At night, it roosts in the trees. Its extravagant coloring lends it the name "blue peafowl".] Revision: rewrote and gendered description.
 		[FEMALE]
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
@@ -2334,6 +2384,7 @@ creature_domestic
 		[CASTE_COLOR:6:0:0]
 	[CASTE:MALE]
 		[CASTE_NAME:blue peacock:blue peacocks:blue peacock]
+		YES_REVISED!DESCRIPTION:A small, colorful forest bird with a fan-shaped crest on its head, white stripes above its eyes, and a magnificent fan-shaped tail for impressing females. At night, it roosts in the trees. Its extravagant coloring lends it the name "blue peafowl".] Revision: rewrote and gendered description.
 		[MALE]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BLUE:1]
@@ -2348,7 +2399,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:BIRD_TURKEY]
-	[DESCRIPTION:A small forest bird known for the distinctive flaps of skin hanging from its face.  It is prized for its meat.]
+	NO_REVISED[DESCRIPTION:A small forest bird known for the distinctive flaps of skin hanging from its face.  It is prized for its meat.]
 	[NAME:turkey:turkeys:turkey]
 	[CHILD:1][GENERAL_CHILD_NAME:poult:poults]
 	[CREATURE_TILE:36][COLOR:4:0:1]
@@ -2432,6 +2483,7 @@ creature_domestic
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[CASTE_NAME:turkey hen:turkey hens:turkey hen]
+		YES_REVISED!DESCRIPTION:A small forest bird with distinctive flaps of skin hanging from its face and a fan-shaped tail. It's prized for its meat.] Revision: rewrote and gendered description.
 		[FEMALE]
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
@@ -2441,6 +2493,7 @@ creature_domestic
 			[CLUTCH_SIZE:10:14]
 	[CASTE:MALE]
 		[CASTE_NAME:turkey gobbler:turkey gobblers:turkey gobbler]
+		YES_REVISED!DESCRIPTION:A small forest bird with distinctive flaps of skin hanging from its face. It's prized for its meat. When attracting mates, it puffs up its feathers, flare its tail into a fan, and makes distinctive gobbling sounds while it struts.] Revision: rewrote and gendered description.
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
@@ -2454,7 +2507,9 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:RABBIT]
-	[DESCRIPTION:A small lagomorph with long ears.  It has powerful hind legs which it uses to swiftly avoid predators.  It can be found anywhere from forests to deserts.]
+	NO_REVISED[DESCRIPTION:A small lagomorph with long ears.  It has powerful hind legs which it uses to swiftly avoid predators.  It can be found anywhere from forests to deserts.]
+
+	YES_REVISED!DESCRIPTION:A small lagomorph with long ears. It outruns predators on its powerful hind legs. It's found everywhere, from forest to desert.] Revision: rewrote description.
 	[NAME:rabbit:rabbits:rabbit]
 	[CHILD:1][GENERAL_CHILD_NAME:bunny:bunnies]
 	[CREATURE_TILE:162][COLOR:6:0:0]
